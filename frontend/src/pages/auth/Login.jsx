@@ -107,7 +107,7 @@ const Login = () => {
         noValidate
         onSubmit={handleSubmit}
         style={{
-          width: "100%",
+          width: "100%"
         }}
       >
         <TextField
@@ -132,13 +132,13 @@ const Login = () => {
         />
         <Button
           variant="contained"
-          sx={{ display: "block", mt: 2, mx: "auto" }}
+          sx={{ display: "block", mt: 2, mx: "auto"}}
           type="submit"
           disabled={loading}
         >
           {loading ? <CustomLoaderButton /> : "Login"}
         </Button>
-        <Typography variant="h6" component="p" sx={{ mt: 2, mb: 1 }}>
+        <Typography variant="h6" component="p">
           {/*  eslint-disable-next-line react/no-unescaped-entities */}
           Don't have an account ? Then{"  "}
           <Link to="/signup" style={{ color: "deepskyblue" }}>
